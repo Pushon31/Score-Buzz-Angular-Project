@@ -27,6 +27,8 @@ import { TournamentsComponent } from './component/tournaments/tournaments.compon
 import { UpcomingMatchesComponent } from './component/upcoming-matches/upcoming-matches.component';
 import { VideosComponent } from './component/videos/videos.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -54,12 +56,16 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     TournamentsComponent,
     UpcomingMatchesComponent,
     VideosComponent
+  
+    
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+     HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

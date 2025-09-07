@@ -1,0 +1,15 @@
+.card {
+  border: 1px solid #444; // subtle border for dark card
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(255, 193, 7, 0.5); // yellow-ish glow
+}
+
+h3 {
+  border-bottom: 2px solid #ffc107; // yellow underline
+  padding-bottom: 5px;
+}

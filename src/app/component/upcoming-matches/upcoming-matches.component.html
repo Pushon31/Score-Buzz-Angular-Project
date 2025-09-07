@@ -1,1 +1,14 @@
-<p>upcoming-matches works!</p>
+<div class="container mt-4">
+  <h3 class="mb-3 text-warning">Upcoming Matches</h3>
+  <div class="row">
+    <div class="col-md-6 col-lg-4 mb-3" *ngFor="let match of upcomingMatches">
+      <div class="card text-light bg-dark shadow-sm p-3">
+        <div class="d-flex justify-content-between">
+          <strong>{{ match.teamA }}</strong> vs <strong>{{ match.teamB }}</strong>
+        </div>
+        <div class="mt-2">Time: {{ match.time }}</div>
+        <small class="text-muted">{{ match.date }}</small>
+      </div>
+    </div>
+  </div>
+</div>
